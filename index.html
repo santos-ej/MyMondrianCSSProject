@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+
+    .mainContainer{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .boxContainer{
+      max-width: 748px;
+      max-height: 748px;
+      display: grid;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 20px;
+      gap: 9px;
+      background-color: black;
+
+    }    
+    .firstBox{
+      background-color: red;
+      height: 414px;
+      width: 320px;
+    }
+
+    .secondBox{
+      height: 414px; 
+      width:  420px;
+      background-color:#F0F1EC;
+    }
+
+    .thirdBox{
+      height: 295px;
+      width: 320px;
+      background-color: #F0F1EC;
+      grid-area: 2 / 1 / 2 / 2;
+    }
+
+    .fourthBox{
+      height: 296px;
+      width: 360px;
+      background-color: #F0F1EC;
+      grid-area: 3 / -3 / -4 / -4;
+    }
+
+    .fifthBox{
+      height: 130px;
+      width: 50px;
+      background-color: #004592;
+      grid-area: 2 / -2 / 2 / -1;
+    }
+
+    .sixthBox{
+      height: 185px;
+      width: 50px;
+      background-color: #F0F1EC;
+      grid-area: 4 / -1 / -3 / -2;
+    }
+
+    .seventhBox{
+      height: 20px;
+      width: 320px;
+      background-color: #F0F1EC;
+      grid-area: 4 / -5 / 4 / -4;
+    }
+
+    .eightBox{
+      height: 20px;
+      width: 198px;
+      background-color: #F9D01E;
+      grid-area: 4 / -3 / 4 / -4;
+    }
+    
+    .ninthBox{
+      height: 20px;
+      width: 153px;
+      background-color: #232629;
+      grid-area: 4 / -2 / 4 / -3;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="mainContainer">
+    <div class="boxContainer">
+      <div class="firstBox">BOX1</div>
+      <div class="secondBox">BOX2</div>
+      <div class="thirdBox">BOX3</div>
+      <div class="fourthBox">BOX4</div>
+      <div class="fifthBox">BOX5</div>
+      <div class="sixthBox">BOX6</div>
+      <div class="seventhBox">BOX7</div>
+      <div class="eightBox">BOX8</div>
+      <div class="ninthBox">BOX9</div>
+    </div>
+  </div>
+</body>
+
+</html>
